@@ -1,0 +1,64 @@
+$green: #57ad68;
+$black: #000;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    box-sizing: border-box;
+}
+header{
+    width: 1100px;
+    margin: 30px auto;
+    shadow: 0 0 10px #000;
+    *{
+        display: inline-block;
+    }
+    .logo{
+        width: 5em;
+        height: 36px;
+        background: url(../img/head-logo.png);
+    }
+    ul{
+        padding: 0 3em;
+        
+        li{
+            margin: 0 1.2em;
+        }
+        a{
+            color: $black;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+    }
+//  .quan1{
+//      width: 50px;
+//      height: 50px;
+//      border: 1px solid $green;
+//      border-radius: 50%;
+//  }
+    .quan2{
+        margin: 5px 1.2em;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: $green;
+        border-radius: 50%;
+        overflow: hidden;
+        text-align: center;
+        img{
+            width: 35px;height: 35px;
+        }
+    }
+    button{
+        width: 7em;
+        height: 50px;
+        border: 1px solid rgba(120,188,133,0.5);
+        border-radius: 25px;
+        color: $green;
+        background: #fff;
+    }
+}
+
+
+
