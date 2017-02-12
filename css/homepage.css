@@ -1,14 +1,488 @@
 @charset "UTF-8";
-* { margin: 0; padding: 0; font-family: "微软雅黑"; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+  box-sizing: border-box; }
 
-header { width: 1100px; margin: 30px auto; shadow: 0 0 10px #000; }
-header * { display: inline-block; }
-header .logo { width: 5em; height: 36px; background: url(../img/head-logo.png); }
-header ul { padding: 0 3em; }
-header ul li { margin: 0 1.2em; }
-header ul a { color: #000; font-size: 1.2em; text-decoration: none; }
-header .quan2 { margin: 5px 1.2em; width: 50px; height: 50px; line-height: 50px; background: #57ad68; border-radius: 50%; overflow: hidden; text-align: center; }
-header .quan2 img { width: 35px; height: 35px; }
-header button { width: 7em; height: 50px; border: 1px solid rgba(120, 188, 133, 0.5); border-radius: 25px; color: #57ad68; background: #fff; }
+a {
+  text-decoration: none;
+  color: #000; }
+
+li {
+  list-style: none; }
+
+header {
+  width: 100%;
+  height: 105px;
+  box-shadow: 0 3px 3px #eee;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background: #fff; }
+  header div {
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden; }
+  header .logo {
+    float: left;
+    width: 5em;
+    height: 36px;
+    margin-top: 30px;
+    background: url(../img/head-logo.png); }
+  header ul {
+    float: left;
+    padding: 0 5em; }
+    header ul li {
+      float: left;
+      height: 105px;
+      line-height: 105px;
+      padding: 0 1.2em; }
+    header ul li:hover {
+      background: #eee; }
+    header ul li:first-child {
+      background: #eee;
+      border-bottom: 3px solid #000; }
+    header ul a {
+      color: #000;
+      font-size: 1.2em; }
+  header .quan1 {
+    margin: 30px 0 0 18em;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #57ad68;
+    border-radius: 50%; }
+  header .quan2 {
+    margin: 5px 1.2em;
+    width: 38px;
+    height: 38px;
+    background: #57ad68;
+    border-radius: 50%;
+    margin: 2px; }
+    header .quan2 img {
+      margin: 9px;
+      width: 19px;
+      height: 20px; }
+  header button {
+    margin-top: 30px;
+    float: right;
+    width: 7em;
+    height: 50px;
+    border: 1px solid rgba(120, 188, 133, 0.5);
+    border-radius: 25px;
+    color: #57ad68;
+    background: #fff; }
+
+.btn:hover {
+  background: #57ad68;
+  color: #fff; }
+
+section {
+  width: 100%;
+  margin: 105px 0 0 0;
+  background-color: rgba(245, 245, 245, 0.5); }
+  section div {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 30px;
+    overflow: hidden; }
+    section div img {
+      display: inline-block;
+      width: 240px;
+      height: 240px;
+      overflow: hidden;
+      -webkit-transition: -webkit-transform 500ms ease-in 0s;
+      transition: transform 500ms ease-in 0s; }
+    section div .img1 {
+      width: 480px;
+      height: 480px;
+      -webkit-transition: -webkit-transform 500ms ease-in 0s;
+      transition: transform 500ms ease-in 0s; }
+  section .divB {
+    padding-top: 0;
+    width: 100%;
+    background: url(../img/bgImg.png) no-repeat; }
+  section .ul1 {
+    margin-left: 70px; }
+    section .ul1 li {
+      float: left;
+      overflow: hidden; }
+    section .ul1 a {
+      float: left;
+      height: 240px; }
+    section .ul1 .a1 {
+      float: left;
+      height: 480px; }
+    section .ul1 .liB {
+      position: relative;
+      width: 480px;
+      height: 480px; }
+    section .ul1 .liS {
+      position: relative;
+      width: 240px;
+      height: 240px; }
+      section .ul1 .liS p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 240px;
+        line-height: 240px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 1.1em;
+        background: rgba(0, 0, 0, 0.5);
+        display: none; }
+    section .ul1 .pB {
+      width: 100%;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      color: #fff;
+      font-size: 1.1em;
+      position: absolute;
+      top: 400px;
+      left: 0px;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.5);
+      display: none; }
+    section .ul1 .liB:hover .pB {
+      display: block; }
+    section .ul1 .liS:hover p {
+      display: block; }
+    section .ul1 .liB:hover img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+    section .ul1 .liS:hover img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+
+.p1 {
+  margin-top: 20px;
+  margin-left: 70px;
+  overflow: hidden; }
+  .p1 img {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px; }
+
+.secDiv1 .ul2 {
+  margin: 0 70px; }
+  .secDiv1 .ul2 .li1 {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 20px 0; }
+.secDiv1 .ul3 {
+  overflow: hidden; }
+  .secDiv1 .ul3 li {
+    float: left;
+    border: 0; }
+  .secDiv1 .ul3 .left {
+    width: 66.9%;
+    padding-left: 20px; }
+    .secDiv1 .ul3 .left h2 {
+      margin: 10px 0; }
+    .secDiv1 .ul3 .left p {
+      margin: 10px 0; }
+      .secDiv1 .ul3 .left p span {
+        color: #57ad68; }
+      .secDiv1 .ul3 .left p img {
+        width: 10px;
+        height: 10px; }
+    .secDiv1 .ul3 .left .foot {
+      margin-top: 70px;
+      color: #aaa; }
+    .secDiv1 .ul3 .left a:hover {
+      color: #57ad68; }
+  .secDiv1 .ul3 .right {
+    width: 33%;
+    overflow: hidden; }
+    .secDiv1 .ul3 .right a {
+      float: left;
+      height: 240px; }
+    .secDiv1 .ul3 .right img {
+      width: 316.13px; }
+
+.ul4 {
+  overflow: hidden;
+  margin: 30px 70px; }
+  .ul4 li {
+    float: left;
+    width: 470px;
+    border: 1px solid #ddd;
+    background: #fff; }
+    .ul4 li img {
+      width: 467px; }
+    .ul4 li h2, .ul4 li p, .ul4 li hr {
+      margin: 20px; }
+    .ul4 li hr {
+      color: #ddd; }
+    .ul4 li p {
+      font-size: 0.8em;
+      overflow: hidden; }
+    .ul4 li span {
+      color: #57ad68; }
+    .ul4 li .img2 {
+      width: 10px;
+      height: 10px; }
+    .ul4 li .left {
+      float: left;
+      color: #aaa; }
+    .ul4 li .right {
+      float: right;
+      color: #aaa; }
+  .ul4 li:first-child {
+    margin-right: 10px; }
+  .ul4 li:last-child {
+    margin-left: 10px; }
+
+.ul5 {
+  overflow: hidden;
+  margin: 30px 70px; }
+  .ul5 li {
+    float: left;
+    width: 298px;
+    border: 1px solid #ddd;
+    margin: 0 11px;
+    background: #fff;
+    overflow: hidden; }
+    .ul5 li .img3 {
+      width: 298px;
+      height: 300px;
+      -webkit-transition: opacity 500ms ease-in 0s,-webkit-transform 500ms ease-in 0s;
+      transition: opacity 500ms ease-in 0s,transform 500ms ease-in 0s; }
+    .ul5 li h2, .ul5 li p {
+      margin: 10px; }
+    .ul5 li p {
+      font-size: 0.8em; }
+    .ul5 li .big {
+      position: relative;
+      width: 298px;
+      height: 300px;
+      margin: 0 0 20px 0;
+      background: #000;
+      overflow: hidden; }
+    .ul5 li .img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 10;
+      width: 100px;
+      height: 100px;
+      margin: 100px 99px;
+      display: none; }
+  .ul5 li:first-child {
+    margin-left: 0;
+    margin-right: 22px; }
+  .ul5 li:last-child {
+    margin-left: 22px;
+    margin-right: 0; }
+  .ul5 p:hover img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  .ul5 p:hover .img {
+    display: block; }
+
+.ul6 {
+  overflow: hidden;
+  margin: 30px 70px; }
+  .ul6 > li {
+    float: left;
+    width: 230px;
+    height: 235px;
+    margin-left: 10px;
+    background: url(../img/user-bg.png); }
+    .ul6 > li ul {
+      width: 180px;
+      margin: 43px 0 0 20px; }
+    .ul6 > li .yuan {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden; }
+      .ul6 > li .yuan img {
+        width: 80px;
+        height: 80px; }
+    .ul6 > li .bo {
+      margin: 10px 0 0 15px;
+      width: 52px;
+      height: 19px; }
+    .ul6 > li li {
+      float: left;
+      width: 90px; }
+    .ul6 > li b, .ul6 > li p {
+      margin: 10px 5px;
+      color: #333; }
+    .ul6 > li p {
+      font-size: 0.8em; }
+  .ul6 > li:first-child {
+    margin-left: 0; }
+
+.secDiv5 p {
+  width: 192px;
+  height: 57px;
+  line-height: 49px;
+  border: 1px solid #57ad68;
+  border-radius: 28.5px;
+  margin: 30px 394px; }
+.secDiv5 button {
+  width: 180px;
+  height: 45px;
+  background: #57ad68;
+  border: 0;
+  border-radius: 22.5px;
+  margin: 5px;
+  color: #fff;
+  box-shadow: 0 3px 3px #84C29D; }
+
+.login {
+  width: 500px;
+  height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  z-index: 301;
+  margin: 0 -250px 0 -250px;
+  background: url(../img/login-bg.png);
+  display: none; }
+  .login .p2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 138px; }
+  .login ul {
+    width: 100%;
+    margin: 73px 0 27px 0;
+    overflow: hidden; }
+    .login ul li {
+      float: left;
+      width: 50%;
+      text-align: center;
+      color: #AAAAAA;
+      cursor: pointer;
+      font-size: 1.2em; }
+    .login ul li:hover {
+      color: #000; }
+    .login ul li:first-child {
+      color: #000; }
+  .login div {
+    width: 100%;
+    height: 272px;
+    padding: 10px 110px;
+    display: none; }
+    .login div input {
+      width: 270px;
+      height: 33px;
+      margin: 20px 5px;
+      border: 0;
+      border-bottom: 1px solid #aaa; }
+    .login div p {
+      width: 100%; }
+    .login div span {
+      float: right;
+      color: #AAAAAA;
+      font-size: 0.8em;
+      cursor: pointer; }
+    .login div span:hover {
+      color: #57ad68; }
+    .login div button {
+      width: 172px;
+      height: 46px;
+      margin: 40px 54px;
+      border: 1px solid #84C29D;
+      border-radius: 23px;
+      color: #57ad68;
+      background: none;
+      font-size: 1.2em; }
+    .login div button:hover {
+      background: #57ad68;
+      color: #fff; }
+    .login div .bg {
+      width: 134px;
+      height: 212px;
+      margin: 25px auto;
+      background: url(../img/wechat-bg.png); }
+    .login div img {
+      width: 92px;
+      height: 92px;
+      margin: 70px 0 0 21px; }
+  .login .show {
+    display: block; }
+
+.top {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  background: #bbb;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  font-size: 1.4em;
+  color: #333;
+  cursor: pointer;
+  display: none; }
+
+.top:hover {
+  color: #fff;
+  background: #57ad68; }
+
+.close {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  z-index: 301;
+  cursor: pointer;
+  display: none; }
+
+footer {
+  margin-top: 30px;
+  background: #000; }
+  footer .foot {
+    width: 1100px;
+    margin: 0 auto;
+    height: 120px; }
+  footer .footLeft {
+    float: left;
+    font-size: 12px;
+    color: #666666; }
+    footer .footLeft img {
+      width: 105px;
+      height: 50px;
+      margin-top: 35px;
+      float: left; }
+    footer .footLeft .about {
+      float: left;
+      height: 120px;
+      margin-left: 2em;
+      padding: 36px 0; }
+    footer .footLeft ul {
+      overflow: hidden; }
+    footer .footLeft li {
+      float: left;
+      padding: 10px; }
+    footer .footLeft a {
+      color: #666666; }
+    footer .footLeft p {
+      padding-left: 10px; }
+  footer .footRig {
+    float: right; }
+    footer .footRig img {
+      width: 44px;
+      height: 44px;
+      margin: 38px 10px 0; }
+    footer .footRig img:nth-child(4) {
+      width: 86px; }
 
 /*# sourceMappingURL=homepage.css.map */
