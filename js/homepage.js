@@ -1,4 +1,4 @@
-var close = document.querySelector(".close");
+﻿var close = document.querySelector(".close");
 window.alert = function(){
 	var bgDiv = document.createElement("div");
 		bgDiv.style.position = "fixed";
@@ -38,33 +38,6 @@ window.alert = function(){
 	}
 }
 
-
-
-
-//var secImg = document.getElementsByClassName("ul1")[0].querySelectorAll("img"),
-//	timer;
-//var imgW,imgH;
-//for(let i = 0;i<secImg.length;i++){
-//	secImg[i].onmouseover = function(){
-//		var img = new Image();
-//		img.src = secImg[i].src;
-//		img.onload = function(){
-//			imgW = secImg[i].width;
-//			imgH = secImg[i].height;
-//			timer = window.setInterval(function(){
-//				secImg[i].width += 10;
-//				secImg[i].height += 10;
-////				console.log(secImg[i].width);
-//			},5)
-//		}
-//	}
-//	secImg[i].onmouseout = function(){
-//		secImg[i].width = imgW;
-//		secImg[i].height = imgH;
-//		clearInterval(timer);
-//	}
-//}
-
 var btn7 = document.getElementById("btn7");
 var timer=null;
 btn7.onclick = function(){
@@ -88,11 +61,11 @@ btn7.onclick = function(){
 var scrollPos;  
 var aaa = document.getElementsByClassName("top")[0];
 function getScrollTop() {  
-        if (window.pageYOffset) {            //IE8及以下不支持
+        if (window.pageYOffset) {           
         scrollPos = window.pageYOffset; }  
-        else if (document.compatMode && document.compatMode != 'BackCompat')  // != 'BackCompat' 即 = 'CSS1Compat'标准兼容模式开启
+        else if (document.compatMode && document.compatMode != 'BackCompat')  
         { scrollPos = document.documentElement.scrollTop; }  
-        else if (document.body) { scrollPos = document.body.scrollTop; }   //只IE支持
+        else if (document.body) { scrollPos = document.body.scrollTop; }   
 		if(scrollPos>100){
 			aaa.style.display = "block";
 		}else{
